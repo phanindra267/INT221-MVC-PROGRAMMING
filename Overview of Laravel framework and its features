@@ -1,0 +1,67 @@
+⭐ Overview of Laravel Framework and Its Features
+🔷 What is Laravel?
+
+Laravel is a free, open-source PHP web framework used for developing modern web applications.
+
+It follows the MVC (Model–View–Controller) architecture and helps developers build applications faster with clean and structured code.
+
+👉 Created by: Taylor Otwell
+
+🔷 Overview of Laravel Framework
+
+Laravel provides a structured way to develop web applications by offering built-in tools and features like routing, authentication, database management, and templating.
+
+It simplifies complex tasks such as:
+
+Database operations
+User authentication
+Session handling
+API development
+🔷 Features of Laravel
+1. MVC Architecture
+Laravel follows Model–View–Controller pattern
+Helps in separating logic, UI, and data
+2. Routing System
+Simple and powerful routing mechanism
+Maps URLs to specific functions
+3. Eloquent ORM (Object Relational Mapping)
+Easy database handling using PHP syntax instead of SQL
+Each table is represented as a model
+4. Blade Template Engine
+Lightweight templating engine
+Supports dynamic content with simple syntax
+5. Built-in Authentication
+Ready-made system for:
+Login
+Registration
+Password reset
+6. Security Features
+
+Laravel protects against:
+
+SQL Injection
+Cross-Site Scripting (XSS)
+Cross-Site Request Forgery (CSRF)
+7. Artisan CLI (Command Line Tool)
+Helps to automate tasks like:
+Creating controllers
+Running migrations
+Starting server
+8. Database Migration & Seeding
+Migrations allow version control of database
+Seeding helps insert sample data easily
+9. Session & Cache Management
+Handles user sessions efficiently
+Supports caching for better performance
+10. API Development Support
+Easily build RESTful APIs
+Useful for mobile and web apps
+🔷 Advantages of Laravel
+Easy to learn
+Clean and readable code
+Saves development time
+Strong community support
+Highly secure
+🔷 Viva Short Answer
+
+👉 “Laravel is an open-source PHP framework based on MVC architecture used for developing modern web applications. It provides features like routing, Eloquent ORM, Blade templates, authentication, and strong security mechanisms.”
