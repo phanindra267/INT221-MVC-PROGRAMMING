@@ -1,0 +1,67 @@
+⭐ MVC Framework (Complete Viva Answer)
+🔷 What is MVC?
+
+MVC (Model–View–Controller) is a software architectural pattern used to design applications by separating them into three interconnected components:
+
+Model
+View
+Controller
+
+It helps in organizing code, separating logic, and improving maintainability.
+
+🔷 1. Model
+Represents data and business logic
+Works with database
+Stores and manages application data
+Example:
+User details (name, age)
+Product information
+Database records
+🔷 2. View
+Represents user interface (UI)
+What user sees on screen
+Displays data from Model
+Example:
+Web page (HTML)
+Forms
+Tables, buttons
+🔷 3. Controller
+Acts as a middle layer
+Takes input from user
+Sends commands to Model
+Returns output to View
+Example:
+Login button click handling
+Form submission processing
+🔷 MVC Flow (Very Important for Viva)
+User → Controller → Model → Controller → View → User
+
+Explanation:
+User sends request
+Controller receives request
+Controller updates/gets data from Model
+Model processes data
+Controller sends data to View
+View displays result to user
+🔷 Real-Life Example (Easy to remember)
+
+👉 Online shopping app:
+
+Model: Product data, cart data, user data
+View: Website pages (cart page, product page)
+Controller: Add to cart, checkout process
+🔷 Advantages of MVC
+✔ Separation of concerns (easy debugging)
+✔ Code reusability
+✔ Easy maintenance
+✔ Parallel development (UI + backend separately)
+✔ Scalable applications
+🔷 Where MVC is used?
+Web frameworks:
+ASP.NET MVC
+Django
+Spring MVC
+Laravel
+🔷 Viva Short Definition (Important)
+
+👉 “MVC is a design pattern that divides an application into Model (data), View (UI), and Controller (logic) to separate concerns and improve code organization.”
