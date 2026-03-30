@@ -1,0 +1,207 @@
+Laravel Directory/Application Structure & Artisan (Full Concept Guide)
+🔷 1. Laravel Directory Structure (Application Structure)
+
+When you create a Laravel project, it generates a well-organized MVC-based folder structure.
+
+Example:
+
+myapp/
+
+📁 1. app/ (Main Application Logic)
+
+This is the core of your application.
+
+Contains:
+Models
+Controllers
+Middleware
+Jobs
+Events
+Important folders:
+app/Http/Controllers   → Business logic (controllers)
+app/Models             → Database tables (models)
+app/Http/Middleware    → Request filters
+
+
+👉 Example:
+
+UserController handles login logic
+User model handles user table
+📁 2. bootstrap/
+Initializes the Laravel framework
+Loads configuration files
+Contains cache files
+
+👉 Rarely modified by developers
+
+📁 3. config/
+Stores all configuration settings
+
+Examples:
+
+database.php → DB settings
+app.php → app settings
+mail.php → email configuration
+
+👉 Very important for system setup
+
+📁 4. database/
+
+Handles database-related work:
+
+Contains:
+Migrations (table structure)
+Seeders (dummy data)
+Factories (test data generation)
+📁 5. public/ ⭐ (Entry Point)
+
+This is the main entry of Laravel application
+
+Contains:
+index.php (main file)
+CSS, JS, images
+
+👉 Browser directly accesses this folder
+
+📁 6. resources/
+
+Used for frontend files
+
+Contains:
+views/ → Blade templates (HTML files)
+js/ → JavaScript
+css/ → Stylesheets
+
+👉 Example:
+
+resources/views/home.blade.php
+
+📁 7. routes/
+
+Defines all URLs of the application
+
+Important files:
+web.php → web routes
+api.php → API routes
+console.php → CLI routes
+Example:
+Route::get('/home', function () {
+    return view('home');
+});
+
+📁 8. storage/
+
+Stores:
+
+Logs
+Cache
+Uploaded files
+📁 9. vendor/
+Contains all Composer dependencies
+Laravel core files also here
+
+👉 Do NOT modify manually
+
+⭐ Laravel Request Flow (Very Important)
+User Request → public/index.php → routes → controller → model → view → response
+
+🔷 2. What is Artisan?
+⭐ Definition:
+
+Artisan is Laravel’s built-in Command Line Interface (CLI) used to automate repetitive tasks.
+
+👉 It helps developers generate code, manage database, run server, etc.
+
+🔧 3. Why Artisan is used?
+To reduce manual coding
+To automate tasks
+To generate boilerplate code
+To manage database easily
+To improve development speed
+🔷 4. How Artisan Works
+
+Artisan runs via terminal:
+
+php artisan command-name
+
+
+It interacts with Laravel core to perform tasks.
+
+🔥 5. Important Artisan Commands
+🚀 Run server
+php artisan serve
+
+🧱 Create Controller
+php artisan make:controller UserController
+
+🧠 Create Model
+php artisan make:model Product
+
+🗄️ Database migration
+php artisan migrate
+
+🧪 Create migration file
+php artisan make:migration create_users_table
+
+🌱 Run seeders
+php artisan db:seed
+
+🔄 Clear cache
+php artisan cache:clear
+
+📋 List all commands
+php artisan list
+
+🔷 6. Custom Artisan Commands (Advanced Concept)
+
+You can create your own commands:
+
+php artisan make:command SendEmails
+
+
+Then define logic inside command class.
+
+🔷 7. Real-Life Analogy
+
+Think of Laravel:
+
+🏗️ Structure = Building
+app/ = rooms (logic)
+routes/ = doors (URLs)
+resources/ = interior design (UI)
+database/ = storage system
+⚙️ Artisan = Construction machine
+Builds controllers
+Creates models
+Runs database setup
+⭐ 8. Advantages of Artisan
+
+✔ Saves time
+✔ Automates repetitive tasks
+✔ Reduces human error
+✔ Fast development
+✔ Built-in tooling
+
+⚠️ 9. Limitations
+
+❌ Requires terminal knowledge
+❌ Beginners may find commands confusing
+❌ Too many commands to remember
+
+⭐ Final Summary
+🔷 Laravel Structure:
+
+Laravel follows a strict MVC-based folder system:
+
+app → logic
+routes → URLs
+resources → UI
+database → data
+public → entry point
+🔷 Artisan:
+
+👉 Artisan is Laravel’s CLI tool used to:
+
+Generate code
+Run server
+Manage databa
