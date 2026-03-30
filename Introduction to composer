@@ -1,0 +1,52 @@
+Introduction to Composer (Viva Answer)
+🔷 What is Composer?
+
+Composer is a dependency management tool for PHP that is used to install, update, and manage libraries (packages) required in a PHP project.
+
+👉 It is similar to:
+
+npm for Node.js
+pip for Python
+🔷 Why Composer is used?
+
+In PHP projects, we often need external libraries. Composer helps to:
+
+Install required packages automatically
+Manage project dependencies
+Keep libraries updated
+Handle version compatibility
+🔷 How Composer works?
+You define required libraries in a file called composer.json
+Composer downloads and installs them from the Packagist repository
+It creates a folder called vendor containing all dependencies
+🔷 Important Files
+1. composer.json
+Contains list of required packages and project settings
+2. composer.lock
+Stores exact versions of installed packages
+Ensures same versions across systems
+3. vendor/ folder
+Stores all installed libraries
+🔷 Basic Composer Commands
+Install dependencies
+composer install
+
+Add a package
+composer require package-name
+
+Update packages
+composer update
+
+🔷 Features of Composer
+Dependency management
+Version control of libraries
+Automatic autoloading of classes
+Easy integration with frameworks like Laravel
+🔷 Advantages of Composer
+Saves development time
+Manages complex dependencies easily
+Ensures project consistency
+Large ecosystem of PHP libraries
+🔷 Viva Short Answer
+
+👉 “Composer is a dependency management tool for PHP used to install and manage project libraries efficiently. It uses composer.json to handle dependencies and automatically downloads required packages.”
